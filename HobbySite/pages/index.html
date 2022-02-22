@@ -9,12 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
         <title>Photography</title>
     </head>
+    <!--Style-->
     <style>
         body {
             margin: 0px;
             margin-top: 0px;
             font-family: 'Work Sans', sans-serif;
             font-weight: 300;
+            margin-bottom: 100px;
             ;
         }
 
@@ -73,9 +75,16 @@
         label {
             color: #eefffc;
         }
+        img {
+            border: 10px;
+        }
+        img.medium {
+            width: 350px;
+        }
 
-
-
+        table {
+            margin-left: 50px
+        }
         nav {
             float: right;
         }
@@ -116,13 +125,11 @@
     <!--end of meta data + header-->
     <body style = "background-color: #222222;">
         <header>
-            <div class="container">
+            <div class="container"> <!--Navigation bar-->
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="gear.html">Gear</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="index.html">Assignment1</a></li>
+                        <li><a href="Assignment2.html">Assignment2</a></li>
                     </ul>
                 </nav>
             </div>
@@ -133,5 +140,73 @@
         <p>
             Navigate through this website to find my lists of equipment, images of my previous work, my social media links, and more!
         </p>
+        <!--Gear-->
+        <h2>The Gear I Use</h2>
+        <ul style = "color: #eefffc; margin-left: 25pt;">
+            <li>Canon 5D Mk IV</li>
+            <li>Canon 85mm f/1.2 Prime Lens</li>
+            <li>Canon 24-70mm f/2.8 USM LII Lens</li>
+            <li>Godox AD400 Pro Strobe Light</li>
+            <li>Misc. peripherals (light modifiers, stands, tripods, etc)</li>
+        </ul>
+        <h2>My Favorite Editing Software, Ranked</h2>
+        <ol style = "color: #eefffc; margin-left: 25pt;">
+            <li>Photoshop</li>
+            <li>Lightroom</li>
+            <li>MS Paint</li>
+        </ol>
+        <table>
+            <tr>
+              <th>Brand</th>
+              <th>Model</th>
+              <th>System</th>
+              <th>Acquired</th>
+            </tr>
+            <tr>
+              <td>Nikon</td>
+              <td>D5100</td>
+              <td>DSLR - Cropped</td>
+              <td>2011</td>
+            </tr>
+            <tr>
+                <td>Canon</td>
+                <td>5D Mark IV</td>
+                <td>DSLR - Full Frame</td>
+                <td>2019</td>
+            </tr>
+            
+        </table>
+        <!--/Gear-->
+        <h2>Collection of Past Work</h2>
+        <img src ="img/1.jpg" class="medium">
+        <img src ="img/2.jpg" class="medium">
+        <img src ="img/3.jpg" class="medium">
+        <img src ="img/4.jpg" class="medium">
+        <img src ="img/5.jpg" class="medium">
+        <img src ="img/6.jpg" class="medium">
+        <img src ="img/7.jpg" class="medium">
+        <img src ="img/8.jpg" class="medium">
+        <img src ="img/9.jpg" class="medium">
+        <img src ="img/10.jpg" class="medium">
+
+        <h2>About Me</h2>
+        <p>
+            My first DSLR camera was a Nikon D5100, a gift to me from my grandmother. I was only 13 at the time, so given that I am 23 now, I have had ample time practice my photography.
+        </p>    
+        <p>It wasn't until college that I adamently pursued portrait photography, largely in part due to the motivation of my now best friend. At first, it was a casual pastime me and my friends did together, as I could practice my photography and they could get pretty photos. But around my sophomore year of college, I upgraded a lot of my equipment and began doing some commercial work. Now I coordinate and direct higher budget shoots, often times with the same friends that I shot with on top of UCF parking garages.
+        </p>
+        <p>
+            Below are links to my social media accounts asscociated with my photography!
+        </p>
+        
+        <a href = "https://www.instagram.com/iamthanah">
+            <img src = "img/ig.png" style = "width: 40px; margin-left: 50px;">
+        </a>
+        <a href = "https://www.tiktok.com/@iamthanah">
+            <img src = "img/tiktok.png" style = "width: 40px; padding-left: 10px;">
+        </a>
+        <a href = "https://twitter.com/iamthanah">
+            <img src = "img/twt.png" style = "width: 40px; padding-left: 10px;">
+        </a>
     </body>
 </html>
