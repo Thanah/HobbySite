@@ -15,8 +15,21 @@ body {
 }
 .flex-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
+.flex-item {
+    width: 200px;
+    height: 45px;
+    padding: 0px;
+    margin: 10px;
+    border: #a37828 solid;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    
+}
 header {
     margin-top: 0px;
     background: #a37828;
@@ -31,44 +44,47 @@ header {
         display: table;
         clear: both;
     }
-
+a {
+    text-decoration: none;
+    color:#222222;
+}
 h1 {
     margin-left: 25px;
     padding-top: 20px;
-    color: #eefffc;
+    color: #fff8ee;
 }
 
 h2 {
     margin-left: 0px;
-    color: #eefffc;
+    color: #fff8ee;
     font-family: 'Work Sans', sans-serif;
 }
 
 h3 {
     font-family: 'Work Sans', sans-serif;
-    color: #eefffc;
+    color: #fff8ee;
 }
 
 p {
     font-family: 'Work Sans', sans-serif;
-    color: #eefffc;
+    color: #fff8ee;
     margin-left: 55px;
 }
 
 b {
     font-family: 'Work Sans', sans-serif;
-    color: #eefffc;
+    color: #fff8ee;
 }
 
 table {
     font-family: 'Work Sans', sans-serif;
-    color: #eefffc;
+    color: #fff8ee;
     text-align: center;
 }
 
 
 label {
-    color: #eefffc;
+    color: #fff8ee;
 }
 img {
     border: 10px;
@@ -78,8 +94,17 @@ img.medium {
     width: 350px;
 }
 img.logo {
-    margin-bottom: -50px;
+    margin-bottom: -35px;
     height: 80px;
+}
+img.button {
+    height: 45px;
+    width: 200px;
+}
+img.flex-item{
+    width: 400px;
+    height: 90px;
+    margin: 10px;
 }
 table {
     margin-left: 50px
@@ -98,7 +123,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 50px;
-    padding-top: 25px;
+    padding-top: 10px;
     position: relative;
 }
 
