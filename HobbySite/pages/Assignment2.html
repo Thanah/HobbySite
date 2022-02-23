@@ -22,17 +22,73 @@
         </header>
         <h1>Thanah Raveendran: The Editing Process</h1>
         <p>Fortunately, I can pursue portrait photography with the help of my talented friends.</p>
-        <p>Click on the images to view their portfolios.</p>
-        <div class=".flex-container">
-            <!--img-->
-            <img src ="img/11.jpg" class="medium">
-            <img src ="img/12.jpg" class="medium">
-            <img src ="img/13.jpg" class="medium">
-            <br>
-            <!--First row-->
+        <p>Click on the f l e x b o x links with r o l l o v e r e f f e c t s below to view some of their portfolios.</p>
+        <div class="flex-container">
+            <a href="val.html" ><img id="val" class="flex-item" src="img/val_button.jpg"></a>
+            <a href="alex.html" ><img id="alex" class="flex-item" src="img/alex_button.jpg"></a>
+            <a href="korbin.html" ><img id="korbin" class="flex-item" src="img/korbin_button.jpg"></a>
+            <a href="sharon.html" ><img id="sharon" class="flex-item" src="img/sharon_button.jpg"></a>
+            <a href="anisa.html" ><img id="anisa" class="flex-item" src="img/anisa_button.jpg"></a>
+            <a href="jasmin.html" ><img id="jasmin" class="flex-item" src="img/jasmin_button.jpg"></a>
         </div>
         
-        
+        <script>
+            //val
+            document.getElementById("val").addEventListener("mouseover", newVal);
+            document.getElementById("val").addEventListener("mouseleave", revertVal);
+            function newVal() {
+                var image = document.getElementById("val").src = "img/val_button2.jpg";
+            }
+            function revertVal() {
+                var image = document.getElementById("val").src = "img/val_button.jpg";
+            }
+            //alex
+            document.getElementById("alex").addEventListener("mouseover", newAlex);
+            document.getElementById("alex").addEventListener("mouseleave", revertAlex);
+            function newAlex() {
+                var image = document.getElementById("alex").src = "img/alex_button2.jpg";
+            }
+            function revertAlex() {
+                var image = document.getElementById("alex").src = "img/alex_button.jpg";
+            }
+            //korbin
+            document.getElementById("korbin").addEventListener("mouseover", newKorbin);
+            document.getElementById("korbin").addEventListener("mouseleave", revertKorbin);
+            function newKorbin() {
+                var image = document.getElementById("korbin").src = "img/korbin_button2.jpg";
+            }
+            function revertKorbin() {
+                var image = document.getElementById("korbin").src = "img/korbin_button.jpg";
+            }
+            //sharon
+            document.getElementById("sharon").addEventListener("mouseover", newSharon);
+            document.getElementById("sharon").addEventListener("mouseleave", revertSharon);
+            function newSharon() {
+                var image = document.getElementById("sharon").src = "img/sharon_button2.jpg";
+            }
+            function revertSharon() {
+                var image = document.getElementById("sharon").src = "img/sharon_button.jpg";
+            }
+            //anisa
+            document.getElementById("anisa").addEventListener("mouseover", newAnisa);
+            document.getElementById("anisa").addEventListener("mouseleave", revertAnisa);
+            function newAnisa() {
+                var image = document.getElementById("anisa").src = "img/anisa_button2.jpg";
+            }
+            function revertAnisa() {
+                var image = document.getElementById("anisa").src = "img/anisa_button.jpg";
+            }
+            //jasmin
+            document.getElementById("jasmin").addEventListener("mouseover", newJas);
+            document.getElementById("jasmin").addEventListener("mouseleave", revertJas);
+            function newJas() {
+                var image = document.getElementById("jasmin").src = "img/jasmin_button2.jpg";
+            }
+            function revertJas() {
+                var image = document.getElementById("jasmin").src = "img/jasmin_button.jpg";
+            }
+            
+        </script>
     </body>
 
 </html>
