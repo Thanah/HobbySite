@@ -2,20 +2,27 @@ body {
     margin: 0px;
     margin-top: 0px;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 100px;
+    margin-left:35px;
+    margin-right: 35px;
     background-color: #222222;
 }
 
 .container {
-    display: flex;
     width: 80%;
     margin: 0 auto;
+}
+.flex-container {
+    display: flex;
 }
 
 header {
     margin-top: 0px;
-    background: #45ac92;
+    background: #a37828;
+    margin-left: -35px;
+    margin-right: -35px;
+    
 }
 
 
@@ -32,7 +39,7 @@ h1 {
 }
 
 h2 {
-    margin-left: 25px;
+    margin-left: 0px;
     color: #eefffc;
     font-family: 'Work Sans', sans-serif;
 }
@@ -51,7 +58,6 @@ p {
 b {
     font-family: 'Work Sans', sans-serif;
     color: #eefffc;
-    margin-left: 50px;
 }
 
 table {
@@ -60,16 +66,21 @@ table {
     text-align: center;
 }
 
+
 label {
     color: #eefffc;
 }
 img {
     border: 10px;
+    align-content: center;
 }
 img.medium {
     width: 350px;
 }
-
+img.logo {
+    margin-bottom: -50px;
+    height: 80px;
+}
 table {
     margin-left: 50px
 }
@@ -77,36 +88,53 @@ nav {
     float: right;
 }
 
-    nav ul {
-        margin: 0;
-        
-        padding: 0;
-        list-style: none;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: rgb(71, 71, 71);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+    nav a:hover {
+        color: #000;
     }
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 333ms;
 
-    nav li {
-        display: inline-block;
-        margin-left: 70px;
-        padding-top: 35px;
     }
-
-    nav a {
-        color: rgb(71, 71, 71);
-        font-size: 20px;
-        text-decoration: none;
-        text-transform: uppercase;
+    nav a:hover::before {
+        width: 100%;
     }
+    
 
-        nav a:hover {
-            color: #000;
-        }
+nav div {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
-    nav div {
-        color: rgb(83, 83, 83);
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-        nav div:hover {
-            color: #000000;
-        }
+nav div:hover {
+    color: #000000;
+}
