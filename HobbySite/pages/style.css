@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 .flex-container {
@@ -18,6 +18,33 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.grid {
+    width: 60%;
+    margin: auto;
+    --gap: 25px;
+    --num-cols: 3;
+    --row-height: 500px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    justify-content: center;
+}
+.grid > img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .grid-col-2 {
+    grid-column: span 2;
+  }
+  
+.grid-row-2 {
+    grid-row: span 2;
 }
 .flex-item {
     width: 200px;
@@ -102,8 +129,8 @@ img.button {
     width: 200px;
 }
 img.flex-item{
-    width: 400px;
-    height: 90px;
+    width: 800px;
+    height: 180px;
     margin: 10px;
 }
 table {
@@ -128,7 +155,7 @@ nav li {
 }
 
 nav a {
-    color: rgb(71, 71, 71);
+    color: rgb(36, 36, 36);
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
