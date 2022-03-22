@@ -19,6 +19,11 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+.socials{
+    margin-top: 30px;
+    width: 50%;
+    margin: auto;
+}
 .grid {
     width: 60%;
     margin: auto;
