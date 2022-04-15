@@ -11,8 +11,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet">
         <title>Men's Coats | Thanah Clothing Co.</title>
+        <script src="clock.js"></script>
     </head>
-    <body class="flex">
+    <body onload="realtimeClock()" class="flex">
         <header>
             <img src="img/logo2.png" class="logo" style="padding-left: 40px; padding-top: 4px;">
             <div class="container"> <!--Navigation bar-->
@@ -25,6 +26,11 @@
                 </nav>
             </div>
         </header>
+        <div class="clock-container">
+            <h1 style="text-align: center;">Site wide sale ends soon: </h1>
+            <div style="text-align: center;" id="clock"></div>
+        </div>
+        
             <div class="row">
                 <div class="col-2">
                     <h1 class="square">Bold statements</h4>
@@ -34,10 +40,10 @@
                     <img src="img/clothes/menscoats/menscoats1.jpg">
                 </div>
             </div>
-
+            
             
             <div class="container-2">
-                <h3 style="font-size: 50px;">Upcoming Releases</h3>
+                <h3 style="font-size: 50px;">Clearance</h3>
                 <div class="row">
                     
                     <div class="col-3">
