@@ -97,6 +97,7 @@ h1 {
 }
 h1.square {
     font-size: 100px;
+    line-height: 110px;
     padding: 25px;
 }
 
